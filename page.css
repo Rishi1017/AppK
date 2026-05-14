@@ -1,0 +1,45 @@
+/* Sidebar Header & Icon Style */
+.sidebar h2 {
+    color: #FFD700; /* Gold colour */
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+}
+
+/* Background Image - Reading your specific file from AppK */
+body {
+    margin: 0;
+    padding: 0;
+    /* This links to the exact name shown in 1000040425.jpg */
+    background-image: url('../Gemini_Generated_Image_cqn7rjcqn7rjcqn7.png'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Main content transparency to see background */
+.main-content {
+    margin-left: 260px;
+    background: rgba(255, 255, 255, 0.88); /* Clean white overlay */
+    min-height: 100vh;
+    padding: 40px;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+}
+
+/* Gold sidebar interaction */
+.sidebar ul li {
+    padding: 15px;
+    list-style: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar ul li:hover {
+    color: #FFD700;
+    background: rgba(0, 0, 0, 0.2);
+    border-left: 5px solid #FFD700;
+}
+
