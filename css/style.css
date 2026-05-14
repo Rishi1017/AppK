@@ -1,45 +1,83 @@
-/* Sidebar Header & Icon Style */
+/* 1. Make the Sidebar Gold and Big */
 .sidebar h2 {
-    color: #FFD700; /* Gold colour */
+    color: #FFD700; 
+    font-size: 40px !important; /* Extra Big */
+    font-weight: 900;
+    text-shadow: 3px 3px 5px #000; /* Black shadow so gold pops */
     text-align: center;
-    font-weight: bold;
-    text-transform: uppercase;
-    padding: 20px 0;
-    border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+    margin-bottom: 20px;
 }
 
-/* Background Image - Reading your specific file from AppK */
-body {
-    margin: 0;
-    padding: 0;
-    /* This links to the exact name shown in 1000040425.jpg */
-    background-image: url('../Gemini_Generated_Image_cqn7rjcqn7rjcqn7.png'); 
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    font-family: 'Arial', sans-serif;
-}
-
-/* Main content transparency to see background */
-.main-content {
-    margin-left: 260px;
-    background: rgba(255, 255, 255, 0.88); /* Clean white overlay */
-    min-height: 100vh;
-    padding: 40px;
-    box-shadow: -5px 0 15px rgba(0,0,0,0.1);
-}
-
-/* Gold sidebar interaction */
 .sidebar ul li {
+    color: #FFD700;
+    font-size: 22px; /* Bigger menu text */
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000;
     padding: 15px;
     list-style: none;
-    cursor: pointer;
-    transition: 0.3s;
 }
 
-.sidebar ul li:hover {
+/* 2. Main Title and Text */
+header h1 {
+    font-size: 60px !important; /* Huge Headline */
+    color: white;
+    font-weight: 900;
+    text-shadow: 4px 4px 10px #000; /* Heavy shadow for visibility */
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 28px; /* Bigger Mission/Vision */
     color: #FFD700;
-    background: rgba(0, 0, 0, 0.2);
-    border-left: 5px solid #FFD700;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #000;
+    background: rgba(0, 0, 0, 0.5); /* Dark tint behind text */
+    display: inline-block;
+    padding: 5px 15px;
 }
 
+/* 3. Fix the Form (The white boxes) */
+.contact-box {
+    margin-top: 50px;
+    background: rgba(0, 0, 0, 0.7); /* Dark background for the form area */
+    padding: 30px;
+    border-radius: 15px;
+    border: 2px solid #FFD700;
+}
+
+.contact-box input, .contact-box textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+    font-size: 20px; /* Big input text */
+    font-weight: bold;
+    border-radius: 8px;
+    border: none;
+}
+
+/* 4. The Submit Button */
+#submitBtn {
+    background: #FFD700;
+    color: black;
+    font-size: 25px;
+    font-weight: 900;
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+}
+
+/* 5. The Sign Up Modal (Gold theme) */
+.modal-content {
+    background: white;
+    padding: 50px;
+    border: 10px solid #FFD700;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.modal-content h2 {
+    font-size: 45px;
+    font-weight: 900;
+    color: #000;
+}
