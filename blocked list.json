@@ -1,0 +1,6 @@
+{
+  "blockedEmails": [
+    "example@gmail.com",
+    "spam-user@gmail.com"
+  ]
+}
