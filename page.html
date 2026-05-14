@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KUDA MEWA CONSTRUCTION</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>KUDA MEWA</h2>
+        <ul>
+            <li>Highway Engineering</li>
+            <li>Water Supply</li>
+            <li>HVAC System</li>
+            <li>Home Automation</li>
+            <li>House Renovation</li>
+            <li>House Building</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main">
+        <header>
+            <h1>KUDA MEWA CONSTRUCTION</h1>
+            <p><strong>Mission:</strong> High-quality engineering solutions.</p>
+            <p><strong>Vision:</strong> Leading Malaysia's infrastructure growth.</p>
+        </header>
+
+        <!-- Lead Form -->
+        <div class="contact-box">
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="Company">
+            <input type="tel" id="phone" placeholder="Phone Number (Compulsory)">
+            <textarea placeholder="What service do you want from us? We are happy to help you out."></textarea>
+            <button id="submitBtn" disabled>Submit</button>
+        </div>
+    </div>
+
+    <!-- Auth Modal -->
+    <div id="auth-modal" class="modal">
+        <div class="modal-content">
+            <h2>Sign Up Required</h2>
+            <button onclick="handleGmailLogin()">Continue with Gmail</button>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script>
+        // Phone number validation logic
+        const phoneInput = document.getElementById('phone');
+        const submitBtn = document.getElementById('submitBtn');
+        phoneInput.oninput = () => {
+            submitBtn.disabled = phoneInput.value.length < 5;
+        };
+    </script>
+</body>
+</html>
